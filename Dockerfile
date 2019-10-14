@@ -11,3 +11,4 @@ RUN apk --no-cache update
 WORKDIR /
 ENTRYPOINT ["/app/server"]
 COPY --from=0 /app/bin/service /app/server
+EXPOSE 9000
